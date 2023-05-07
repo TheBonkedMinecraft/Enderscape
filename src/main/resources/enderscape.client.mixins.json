@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "package": "net.bunten.enderscape.client.mixin",
+    "compatabilityLevel": "JAVA_17",
+    "client": [
+        "ArmorFeatureRendererMixin",
+        "MinecraftClientMixin",
+        "TexturedRenderLayersMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

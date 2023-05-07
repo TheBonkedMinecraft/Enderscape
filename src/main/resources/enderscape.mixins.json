@@ -1,0 +1,23 @@
+{
+	"required": true,
+	"package": "net.bunten.enderscape.mixin",
+	"compatabilityLevel": "JAVA_17",
+	"mixins": [
+		"BlockEntityTypeMixin",
+		"BlockMixin",
+		"DispenserBehaviorMixin",
+		"EndCrystalItemMixin",
+		"FungusBlockMixin",
+		"ItemMixin",
+		"LivingEntityMixin",
+		"PlayerEntityMixin",
+		"RootsBlockMixin",
+		"SproutsBlockMixin",
+		"TheEndBiomeCreatorMixin",
+		"TridentEntityMixin"
+	],
+	"server": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

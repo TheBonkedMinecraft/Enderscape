@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "id": "enderscape",
+    "version": "${version}",
+    "name": "Enderscape",
+    "description": "A mod that adds new content to The End dimension, such as biomes, mobs, ores, and more.\nThe focus is to add features that aren't unfitting for the vanilla game while enhancing the overall experience.",
+    "authors": [
+        "bunten (Primary developer)"
+    ],
+    "contributors": [
+        "Aigis (3D Logo)",
+        "ArathainFarqoe (Additional programming and art)",
+        "FourTimesCold (Concept art)",
+        "MaakuArc (3D art and concept art)"
+    ],
+    "contact": {
+        "sources": "https://github.com/lunarbunten/enderscape",
+        "issues": "https://github.com/lunarbunten/enderscape/issues"
+    },
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.enderscape.curseforge": "https://www.curseforge.com/minecraft/mc-mods/enderscape",
+                "modmenu.enderscape.modrinth": "https://modrinth.com/mod/enderscape"
+            }
+        }
+    },
+    "license": "MIT",
+    "icon": "assets/enderscape/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.bunten.enderscape.Enderscape"
+        ],
+        "client": [
+            "net.bunten.enderscape.client.EnderscapeClient"
+        ]
+    },
+    "mixins": [
+        "enderscape.mixins.json",
+        "enderscape.client.mixins.json"
+    ],
+    "depends": {
+        "minecraft": "~1.19",
+        "fabricloader": ">=0.14.6",
+        "fabric": ">=0.55.1",
+        "bclib": ">=2.0.10"
+    },
+    "accessWidener": "enderscape.accesswidener"
+}

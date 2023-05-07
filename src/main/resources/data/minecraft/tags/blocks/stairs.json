@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "enderscape:celestial_stairs",
+        "enderscape:shadow_quartz_block_stairs",
+        "enderscape:smooth_shadow_quartz_stairs",
+        "enderscape:shadow_quartz_brick_stairs"
+    ]
+}
