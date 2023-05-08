@@ -1,25 +1,16 @@
 package net.bunten.enderscape;
 
+import net.bunten.enderscape.registry.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMap.Builder;
 
-import net.bunten.enderscape.registry.EnderscapeBlocks;
-import net.bunten.enderscape.registry.EnderscapeCriteria;
-import net.bunten.enderscape.registry.EnderscapeEntities;
-import net.bunten.enderscape.registry.EnderscapeItems;
-import net.bunten.enderscape.registry.EnderscapeLootInjects;
-import net.bunten.enderscape.registry.EnderscapeRegistry;
-import net.bunten.enderscape.registry.EnderscapeStats;
 import net.bunten.enderscape.util.PlantUtil;
-import net.bunten.enderscape.world.EnderscapeBiomes;
-import net.bunten.enderscape.world.EnderscapeFeatures;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -45,14 +36,6 @@ public class Enderscape implements ModInitializer {
 
     public static Logger getLogger() {
         return LogManager.getLogger();
-    }
-
-    public static boolean hasBetterEnd() {
-        return FabricLoader.getInstance().isModLoaded("betterend");
-    }
-
-    public static boolean isDevelopment() {
-        return FabricLoader.getInstance().isDevelopmentEnvironment();
     }
 
     private static ImmutableMap<Block, Block> getStrippedMap() {
@@ -121,8 +104,6 @@ public class Enderscape implements ModInitializer {
         EnderscapeLootInjects.init();
         EnderscapeStats.init();
 
-        EnderscapeFeatures.init();
-        EnderscapeBiomes.init();
 
         registerEvents();
 
