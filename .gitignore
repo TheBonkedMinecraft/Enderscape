@@ -31,3 +31,5 @@ run/
 *.jar
 *.ini
 logs/
+
+.DS_STORE
